@@ -1,0 +1,255 @@
+<html>
+  <style>
+    .log-in-btn {
+      position: absolute;
+      width: 358px;
+      height: 123px;
+      background: #D9D9D9;
+      top: 20px;
+      right: 20px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 120%;
+      align-items: center;
+      text-align: center;
+      color: #000000;
+    }
+
+    .title {
+      position: absolute;
+      width: 371px;
+      height: 65px;
+      left: 589px;
+      top: 73px;
+      font-family: 'Iowan Old Style';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 41px;
+      color: #F27F0C;
+      text-align: center;
+
+    }
+
+    .time-sub-title {
+      position: absolute;
+      left: 400px;
+      top: 120px;
+      font-family: 'Iowan Old Style';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 48px;
+      color: #000000;
+    }
+
+    .time-start-text {
+      position: absolute;
+      left: 400px;
+      top: 240px;
+      font-family: 'Iowan Old Style';
+      font-style: normal;
+      font-weight: 200;
+      font-size: 19px;
+      color: #000000;
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    .time-end-text {
+      position: absolute;
+      left: 400px;
+      top: 280px;
+      font-family: 'Iowan Old Style';
+      font-style: normal;
+      font-weight: 200;
+      font-size: 19px;
+      color: #000000;
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    .start-date-input {
+      position: absolute;
+      left: 550px;
+      top: 240px;
+    }
+
+    .end-date-input {
+      position: absolute;
+      left: 550px;
+      top: 280px;
+    }
+
+    input:focus {
+      outline: none !important;
+    }
+
+    ::-webkit-input-placeholder {
+      text-align: center;
+      color: #faa753;
+    }
+
+    :-moz-placeholder {
+      text-align: center;
+      color: #faa753;
+    }
+
+    .event-sub-title {
+      position: absolute;
+      left: 200px;
+      top: 500px;
+      font-family: 'Iowan Old Style';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 48px;
+      color: #000000;
+    }
+
+    .place-sub-title {
+      position: absolute;
+      left: 900px;
+      top: 500px;
+      font-family: 'Iowan Old Style';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 48px;
+      color: #000000;
+    }
+
+    .checkbox:checked:before{
+      background-color:green;
+    }
+
+    .what-to-do-1 {
+      position: absolute;
+      left: 200px;
+      top: 590px;
+      font-family: 'Iowan Old Style';
+      font-style: normal;
+      font-weight: 200;
+      font-size: 19px;
+      color: #000000;
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    .what-to-do-2 {
+      position: absolute;
+      left: 200px;
+      top: 630px;
+      font-family: 'Iowan Old Style';
+      font-style: normal;
+      font-weight: 200;
+      font-size: 19px;
+      color: #000000;
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    .place-input {
+      position: absolute;
+      left: 900px;
+      top: 600px;
+      font-family: 'Iowan Old Style';
+      font-style: normal;
+      font-weight: 200;
+      font-size: 19px;
+      color: #000000;
+      box-sizing: border-box;
+      border: 0.5px solid #878787;
+      border-bottom-color: #faa753;
+    }
+
+    .place-input::-webkit-input-placeholder {
+      text-align: left;
+      color: #aaaaaa;
+    }
+
+    .place-input:-moz-placeholder {
+      text-align: center;
+      color: #aaaaaa;
+    }
+
+    .submit-btn {
+      position: absolute;
+      left: 45vw;
+      top: 80vh;
+      background: #F27F0C;
+
+      position: absolute;
+      width: 10vw;
+      height: 10vh;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 200;
+      font-size: 25px;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+    }
+
+  </style>
+
+  <body>
+    <button class="log-in-btn">Log In</button>
+    <h2 class="time-sub-title">When?</h2>
+    <h5 class="time-start-text">Start Datetime</h5>
+    <h5 class="time-end-text">End Datetime</h5>
+    <h2 class="event-sub-title">What?</h2>
+    <div>
+      <p class="what-to-do-1"><input id="Play" type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;Things to do</p>
+      <p class="what-to-do-2"><input id="Eat" type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;Food & drinks</p>
+    </div>
+    <h2 class="place-sub-title">Where?</h2>
+
+
+    <input id="EventNameInput" class="title" placeholder="Your Event Name">
+    <input id="StartTime" class="start-date-input" type="datetime-local">
+    <input id="EndTime" class="end-date-input" type="datetime-local">
+    <input id="Place" class="place-input" placeholder="Where are you going?">
+
+    <button id="SubBtn" class="submit-btn" onclick="beak_form_create()">Create Event</button>
+  </body>
+
+  <script type="application/javascript">
+    const url = '127.0.0.1';
+    // function timeZoneTest() {
+    //   var a = - new Date().getTimezoneOffset() / 60;
+    //   alert(a);
+    // }
+    function beak_form_create() {
+      var event_name = document.getElementById("EventNameInput").value;
+      var start_time = document.getElementById("StartTime").value;
+      var end_time = document.getElementById("EndTime").value;
+      var place = document.getElementById("Place").value;
+      var play = document.getElementById("Play").checked;
+      var eat = document.getElementById("Eat").checked;
+      var data = {
+        event_name: event_name,
+        start_time: start_time,
+        end_time: end_time,
+        place: place,
+        event: {
+          play: play,
+          eat: eat,
+        }
+      }
+      fetch(url, {
+        method: "POST",
+        body: JSON.stringify(data)
+      }).then(res => {
+        // alert(res);
+        console.log("Submitted Data:", res);
+      }).catch((error) => {
+        alert(error);
+        // console.error('Error:', error);
+      });
+    }
+  </script>
+
+</html>
