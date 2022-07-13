@@ -102,7 +102,6 @@ function CardList(props) {
             <button className={classes.create_btn}>Create</button>
         </div>
         </form>
-        
     );
 }
 
