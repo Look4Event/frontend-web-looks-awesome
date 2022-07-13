@@ -97,9 +97,12 @@ function CardList(props) {
                     </div>
                 </FilterCard>  
             </li>
-                <button> Create Event</button>
         </ul>
+        <div className={classes.mid_div}>
+            <button className={classes.create_btn}>Create</button>
+        </div>
         </form>
+        
     );
 }
 

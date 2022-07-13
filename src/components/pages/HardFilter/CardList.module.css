@@ -48,8 +48,6 @@
     font-size: 1.3rem;
 }
 
-
-
 .control_left {
  width: 45%;
 }
@@ -108,10 +106,26 @@
     justify-content: center;
   }
   
-  
+  .mid_div {
+    text-align: center;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
 
+  .create_btn {
+    background: rgb(255, 133, 2);
+    border-radius: 10px;
+    width:6rem;
+    height:3rem;
+    font-size:1.2rem;
+    color:white;
+    border:none;
+  }
 
-
-
-
+  .create_btn:hover, .create_btn.hover {
+    background: rgb(255, 160, 0);
+    border-radius: 10px;
+    color:white;
+    border:none;
+  }
   
