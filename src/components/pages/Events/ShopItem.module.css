@@ -1,0 +1,24 @@
+.item {
+  margin: 1rem auto;
+}
+
+.image {
+  width: 80%;
+  height: 12rem;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.content {
+  padding-left: 2rem;
+  padding-bottom: .5rem;
+  text-align:justify;
+  font-size: 10;
+}
+
