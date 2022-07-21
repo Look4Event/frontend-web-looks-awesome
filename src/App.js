@@ -7,30 +7,17 @@ import FormLayout from './components/layouts/FormLayout';
 import CreateAccountPage from './pages/CreateAccount';
 
 function App() {
-  const {pathname} = useLocation();
-  console.log(pathname);
-
-  if (pathname !== '/create-account') {
-    return (
-      <div>
-        <FormLayout>
-          <Routes>
-            <Route exact path='/' element={<HomePage />} />
-            <Route exact path='/create' element={<HardFilterPage />} />
-            <Route exact path='/results' element={<EventDisplayGuestPage />} />
-          </Routes>
-        </FormLayout>
-      </div>
-    );
-  } else {
-      return (
-      <div>
+  return (
+    <div>
+      <FormLayout>
         <Routes>
-          <Route exact path='/create-account' element={<CreateAccountPage />} />
+          <Route exact path='/' element={<HomePage />} />
+          <Route exact path='/create' element={<HardFilterPage />} />
+          <Route exact path='/results' element={<EventDisplayGuestPage />} />
         </Routes>
-      </div>
-      );
-  } 
+      </FormLayout>
+    </div>
+  ); 
 }
 
 export default App;
