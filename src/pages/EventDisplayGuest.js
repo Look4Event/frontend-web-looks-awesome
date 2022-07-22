@@ -17,7 +17,7 @@ const DUMMY_DATA = [
     name: "B",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg",
-    website: "https://XXX.com",
+    website: "https://XXdddddddddddddddddddddddddddddX.com",
     rating: "10",
   },
   {
@@ -79,7 +79,7 @@ function HomePage() {
   }
 
   return (
-    <section classNAme={classes.section_board}>
+    <section className={classes.section_board}>
       <ShopList shopListData={DUMMY_DATA} />
     </section>
   );

@@ -1,13 +1,14 @@
 .list {
   list-style: none;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: -18rem;
+  margin-right: 8rem;
 }
 
 .card_board{
   display: flex;
   width: 200%;
   flex-flow: wrap;
+
 }
 
 .card_board::after {
@@ -19,5 +20,7 @@
   text-align: center;
   font-size: 1.5rem;
   color: #565656;
+  margin-left:+18rem; /* to counteract Margin-left: -10 rem in .list. This makes "Reccomendation" in the center*/
+  margin-right: -8rem; /* to counteract Margin-left: -10 rem in .list. This makes "Reccomendation" in the center*/
 }
 
