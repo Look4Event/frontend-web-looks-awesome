@@ -13,4 +13,7 @@
 
   h1, h2, h3, h4, p {
     text-align: center;
+    font-family: 'Iowan Old Style';
+    font-style: normal;
+    font-weight: 700;
   }
