@@ -15,8 +15,8 @@ function EditSharePage(props) {
     return (
         <div>
             <EditShareCard>
-                <EditShareList items={DUMMY_DATA_FOOD}></EditShareList>
-                <EditShareList items={DUMMY_DATA_DRINKS}></EditShareList>
+                <EditShareList category='Food' items={DUMMY_DATA_FOOD}></EditShareList>
+                <EditShareList category='Drinks' items={DUMMY_DATA_DRINKS}></EditShareList>
             </EditShareCard>
         </div>
     )
