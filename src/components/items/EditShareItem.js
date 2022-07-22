@@ -7,7 +7,6 @@ function EditShareItem(props) {
             <EditShareItemCard>
                 <div className={classes.content}>
                     <h1>{props.title}</h1>
-                    <p>{props.detail}</p>
                 </div>
             </EditShareItemCard>
         </li>

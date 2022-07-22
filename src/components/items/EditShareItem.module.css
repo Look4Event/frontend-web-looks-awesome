@@ -1,5 +1,5 @@
 .item {
-    margin: 1rem 0;
+    margin: 1rem;
   }
   
   .content {
@@ -8,7 +8,6 @@
     font-weight: 700;
     font-size: 0.5rem;
     line-height: 33px;
-    /* identical to box height */
     text-align: center;
 
     color: #F27F0C;

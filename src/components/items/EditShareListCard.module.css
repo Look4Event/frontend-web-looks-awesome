@@ -1,9 +1,12 @@
 .card {
+    height: 100%;
+    width: 50rem;
+
     background: rgba(255, 245, 220, 0.6);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 
     display: flex;
-    align-items: center;
-    flex-flow: row;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
   }
