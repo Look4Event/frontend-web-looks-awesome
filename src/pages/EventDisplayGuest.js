@@ -1,10 +1,12 @@
 import {useState, useEffect} from 'react'
 
 import ShopList from "../components/pages/Events/ShopList";
+import classes from "./EventDisplayGuest.module.css";
+
 const DUMMY_DATA = [
   {
     id: "m1",
-    name: "This is a first meetup",
+    name: "A",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg",
     website: "https://XXX.com",
@@ -12,7 +14,31 @@ const DUMMY_DATA = [
   },
   {
     id: "m2",
-    name: "This is a second meetup",
+    name: "B",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg",
+    website: "https://XXX.com",
+    rating: "10",
+  },
+  {
+    id: "m3",
+    name: "C",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg",
+    website: "https://XXX.com",
+    rating: "10",
+  },
+  {
+    id: "m4",
+    name: "D",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg",
+    website: "https://XXX.com",
+    rating: "10",
+  },
+  {
+    id: "m5",
+    name: "E",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg",
     website: "https://XXX.com",
@@ -21,7 +47,7 @@ const DUMMY_DATA = [
 ];
 
 function HomePage() {
-    const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
   const [loadedItems, setLoadedItems] = useState([]);
 
 
@@ -53,8 +79,7 @@ function HomePage() {
   }
 
   return (
-    <section>
-      <h1> All Recommendations</h1>
+    <section classNAme={classes.section_board}>
       <ShopList shopListData={DUMMY_DATA} />
     </section>
   );

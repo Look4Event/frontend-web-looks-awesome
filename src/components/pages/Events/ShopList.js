@@ -5,7 +5,10 @@ import classes from "./ShopList.module.css"
 function ShopList(props) {
   return (
     <ul className={classes.list}>
-      <div className={classes.card}> 
+      <div className={classes.title_name}>
+        Recommendations
+      </div>
+      <div className={classes.card_board}>
       {props.shopListData.map((shopitem) => (
         <ShopItem
           key = {shopitem.id}
@@ -15,10 +18,8 @@ function ShopList(props) {
           rating={shopitem.rating}
           website={shopitem.website}
         />
-        
       ))}
       </div>
-
     </ul>
   );
 }

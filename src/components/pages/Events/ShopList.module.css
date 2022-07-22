@@ -1,12 +1,23 @@
 .list {
   list-style: none;
-  margin: 10;
-
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
-.card{
+.card_board{
   display: flex;
-  width: 100%;
+  width: 200%;
+  flex-flow: wrap;
+}
 
+.card_board::after {
+  content: '';
+  flex: 1;
+}
+
+.title_name {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #565656;
 }
 

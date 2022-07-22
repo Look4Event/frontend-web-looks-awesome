@@ -1,9 +1,10 @@
 .item {
-  margin: 1rem auto;
+  width: 24.9%;
+  margin-top: 1.5rem;
 }
 
 .image {
-  width: 80%;
+  width: 90%;
   height: 12rem;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
