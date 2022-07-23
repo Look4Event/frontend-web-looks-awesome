@@ -2,33 +2,44 @@
     margin: 1rem;
   }
   
-  .content {
-    font-family: 'Iowan Old Style';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 0.5rem;
-    line-height: 33px;
-    text-align: center;
+.content {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  
+  height: 100%;
+  width: 100%;
+  margin: auto;
 
-    color: #F27F0C;
-  }
-    
-  .actions {
-    padding: 1.5rem;
-    text-align: center;
-  }
+  font-family: 'Iowan Old Style';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.5rem;
+  line-height: 33px;
+  text-align: center;
+
+  color: #F27F0C;
+  border-radius: 10px;
+}
   
-  .actions button {
-    font: inherit;
-    cursor: pointer;
-    color: #77002e;
-    border: 1px solid #77002e;
-    background-color: transparent;
-    padding: 0.5rem 1.5rem;
-    border-radius: 4px;
-  }
-  
-  .actions button:hover,
-  .actions button:active {
-    background-color: #ffe2ed;
-  }
+.actions {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.actions button {
+  font: inherit;
+  cursor: pointer;
+  color: #77002e;
+  border: 1px solid #77002e;
+  background-color: transparent;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: #ffe2ed;
+}
