@@ -3,3 +3,27 @@
     margin: 0;
     padding: 0;
   }
+
+.category {
+  /* Set absolute here so that closeButton can ignore it and come to the same row */
+  position: absolute; 
+  /* Set width 100% so that the category title has the same width as the EditShareListCard, and thus text-align:center will put it in the middle of the card */
+  width: 100%;
+
+  text-align: center;
+  font-family: 'Iowan Old Style';
+  font-style: normal;
+  font-weight: 700;
+}
+
+.closeButton {
+  position: relative;
+  left: 95%;
+
+  width: 2rem;
+  height: 2rem;
+
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}

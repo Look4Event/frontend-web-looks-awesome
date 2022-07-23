@@ -2,12 +2,21 @@ import EditShareItem from "./EditShareItem";
 import EditShareListCard from "./EditShareListCard";
 import EditShareListContainer from "./EditShareListContainer";
 import classes from './EditShareList.module.css'
+import { useState } from "react";
 
 function EditShareList(props) {
+    const [showList, setShowList] = useState(true);
+
+    function listCloseHandler() {
+        setShowList(false);
+    }
+
     return (
         <ul className={classes.list}>
+            {showList &&
             <EditShareListCard>
-                <h2>{props.category}</h2>
+                <h2 className={classes.category}>{props.category}</h2>
+                <button className={classes.closeButton} onClick={listCloseHandler}>x</button>
                 <EditShareListContainer>
                     {props.items.map((item) => (
                         <EditShareItem 
@@ -19,6 +28,7 @@ function EditShareList(props) {
                     )}
                 </EditShareListContainer>
             </EditShareListCard>
+            }   
         </ul>
     )
 }

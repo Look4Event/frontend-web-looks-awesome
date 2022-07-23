@@ -1,19 +1,13 @@
 .card {
+    /* Set relative here without position settings so that card position doesn't change but Category and closeButton in EditShareList.module.css can absolute against it */
+    position: relative;
+
     height: 100%;
     width: 50rem;
+
+    margin: 1rem;
 
     background: rgba(255, 245, 220, 0.6);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-
-    /* display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly; */
-  }
-
-  h1, h2, h3, h4, p {
-    text-align: center;
-    font-family: 'Iowan Old Style';
-    font-style: normal;
-    font-weight: 700;
   }
