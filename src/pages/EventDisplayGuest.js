@@ -54,33 +54,33 @@ function HomePage() {
   useEffect(() => {
     setIsLoading(true)
     fetch(
-      "https://react-getting-started-f72f6-default-rtdb.firebaseio.com/frontend.json"
-    )
-      .then((response) => {
+      "http://solaceg.pythonanywhere.com/places/"
+    ).then((response) => {
         return response.json();
       })
       .then((data) => {
+        data=data.places;
         const shopping = []
         for (const key in data){
           const shop = {
             id: key,
             ...data[key]
           }
-          shopping.push(shop)
+          shopping.push(shop);
         }
        
         setIsLoading(false);
-        setLoadedItems(shopping)
+        setLoadedItems(shopping);
       });
   } ,[] )
 
   if (isLoading) {
     return <p>Loading</p>;
   }
-
+ 
   return (
     <section className={classes.section_board}>
-      <ShopList shopListData={DUMMY_DATA} />
+      <ShopList shopListData={loadedItems}/>
     </section>
   );
 }
