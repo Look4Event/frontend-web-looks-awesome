@@ -6,26 +6,26 @@ import classes from "./EventDisplayGuest.module.css";
 const DUMMY_DATA = [
   {
     id: "m1",
-    name: "A",
+    name: "Auth 2.0",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg",
-    website: "https://XXX.com",
+    website: "https://developers.google.com/identity/protocols/oauth2",
     rating: "10",
   },
   {
     id: "m2",
-    name: "B",
+    name: "Buzzer",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg",
-    website: "https://XXdddddddddddddddddddddddddddddX.com",
+    website: "https://www.buzzer.com/",
     rating: "10",
   },
   {
     id: "m3",
-    name: "C",
+    name: "CSS tutorial",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg",
-    website: "https://XXX.com",
+    website: "https://www.w3schools.com/css/",
     rating: "10",
   },
   {
@@ -33,7 +33,7 @@ const DUMMY_DATA = [
     name: "D",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg",
-    website: "https://XXX.com",
+    website: "https://www.deepl.com/translator",
     rating: "10",
   },
   {
@@ -41,7 +41,7 @@ const DUMMY_DATA = [
     name: "E",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg",
-    website: "https://XXX.com",
+    website: "https://ezgif.com/",
     rating: "10",
   },
 ];

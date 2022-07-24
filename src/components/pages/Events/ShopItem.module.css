@@ -18,6 +18,11 @@
   display: block;
 }
 
+.image_overlay a {
+  color:bisque;
+  font-size: 0.8rem;
+  text-decoration: none !important;
+}
 
 .image_overlay{
   position:absolute;
@@ -32,13 +37,12 @@
   text-align: center;
   justify-content: center;
   opacity: 0;
-  transition: opacity 0.25s;
+  transition: opacity 0.4s;
 }
 
 .image_overlay:hover{
   opacity: 1;
 }
-
 
 .image_overlay > *{
   transform: translateY(20px);
@@ -46,23 +50,21 @@
 
 }
 
-
 .image_overlay:hover> *{
   transform: translateY(0px);
   transition: transform 0.25s;
 
 }
 
-
 .h3{
-  font-size: 15;
+  font-size: 1.5rem;
   margin-bottom: 1px;
   font-weight: bold;
   font-family: sans-serif;
 }
 
 .paragraph{
-  font-size: 12;
+  font-size: 1rem;
   margin-bottom: 1px;
   font-family: sans-serif;
 }
