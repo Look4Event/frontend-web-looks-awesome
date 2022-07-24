@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from "react";
 
 import ShopList from "../components/pages/Events/ShopList";
 import classes from "./EventDisplayGuest.module.css";
@@ -50,37 +50,35 @@ function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
   const [loadedItems, setLoadedItems] = useState([]);
 
-
   useEffect(() => {
-    setIsLoading(true)
-    fetch(
-      "http://solaceg.pythonanywhere.com/places/"
-    ).then((response) => {
+    setIsLoading(true);
+    fetch("http://solaceg.pythonanywhere.com/places/")
+      .then((response) => {
         return response.json();
       })
       .then((data) => {
-        data=data.places;
-        const shopping = []
-        for (const key in data){
+        data = data.places;
+        const shopping = [];
+        for (const key in data) {
           const shop = {
             id: key,
-            ...data[key]
-          }
+            ...data[key],
+          };
           shopping.push(shop);
         }
-       
+
         setIsLoading(false);
         setLoadedItems(shopping);
       });
-  } ,[] )
+  }, []);
 
   if (isLoading) {
     return <p>Loading</p>;
   }
- 
+
   return (
     <section className={classes.section_board}>
-      <ShopList shopListData={loadedItems}/>
+      <ShopList shopListData={loadedItems} />
     </section>
   );
 }
