@@ -2,7 +2,8 @@
     margin: 1rem;
   }
   
-.content {
+.status_color {
+  /* This element covers each EditShareItemCard and display different colors depending on item status */
   position: absolute;
   left: 0%;
   right: 0%;
@@ -11,6 +12,15 @@
   
   height: 100%;
   width: 100%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.content {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  
   margin: auto;
 
   font-family: 'Iowan Old Style';
@@ -21,25 +31,4 @@
   text-align: center;
 
   color: #F27F0C;
-  border-radius: 10px;
-}
-  
-.actions {
-  padding: 1.5rem;
-  text-align: center;
-}
-
-.actions button {
-  font: inherit;
-  cursor: pointer;
-  color: #77002e;
-  border: 1px solid #77002e;
-  background-color: transparent;
-  padding: 0.5rem 1.5rem;
-  border-radius: 4px;
-}
-
-.actions button:hover,
-.actions button:active {
-  background-color: #ffe2ed;
 }

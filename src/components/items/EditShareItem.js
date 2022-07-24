@@ -16,9 +16,10 @@ function EditShareItem(props) {
     return (
         <li className={classes.item} onClick={itemClickHandler}>
             <EditShareItemCard>
-                <div className={classes.content} style={{backgroundColor:itemActive ? 'transparent' : 'grey', opacity: itemActive ? 1 : 0.5}}>
+                <div className={classes.content}>
                     <h1>{props.title}</h1>
                 </div>
+                <div className={classes.status_color} style={{backgroundColor:itemActive ? 'transparent' : 'grey', opacity: itemActive ? 1 : 0.5}}></div>
             </EditShareItemCard>
         </li>
     )
