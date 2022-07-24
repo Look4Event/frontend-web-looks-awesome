@@ -1,5 +1,12 @@
 .container {
+    position: relative;
+    /* Set height 90% because category title and close button has already taken some space on top */
+    height: 90%;
+
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+
+    /* Set overflow: auto so that a scrollbar will show up when needed */
+    overflow: auto;
 }
