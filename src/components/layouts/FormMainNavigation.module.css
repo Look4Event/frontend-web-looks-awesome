@@ -50,33 +50,26 @@
     border-bottom-width:3px; 
     border-bottom-style:solid;
   }
-  
-  .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    justify-content: flex-start;
-    padding-left: 5%;
-  }
 
-  .logo_right {
-    margin-right:5%;
-  }
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  justify-content: flex-start;
+  padding-left: 5%;
+}
 
-  .login {
-    background: #fbb875;
-    border-radius: 10px;
-    width:5rem;
-    height:2rem;
-    font-size:1rem;
-    color:white;
-    border:none;
-  }
+.logo_right {
+  margin-right:5%;
+}
 
-  .login:hover, .login.hover {
-    background: orange;
-    border-radius: 10px;
-    width:5rem;
-    height:2rem;
-    color:white;
-    border:none;
-  }
+.profile_img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.welcome_words {
+  color: #676767;
+  font-size: 1rem;
+  padding-left: 0.5rem;;
+}
