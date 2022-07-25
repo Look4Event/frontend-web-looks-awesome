@@ -11,14 +11,15 @@ function ShopList(props) {
       <div className={classes.card_board}>
       {props.shopListData.map((shopitem) => (
         <ShopItem
-          key = {shopitem.id}
-          id = {shopitem.id}
-          image={shopitem.image}
+          key = {shopitem.google_id}
+          id = {shopitem.google_id}
+          image={'https://docs.microsoft.com/en-us/windows/apps/design/controls/images/image-licorice.jpg'}
           name={shopitem.name}
-          rating={shopitem.rating}
-          website={shopitem.website}
+          rating={shopitem.google_rating}
+          website={'https://www.deepl.com/translator'}
         />
       ))}
+  
       </div>
     </ul>
   );
