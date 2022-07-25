@@ -159,4 +159,53 @@ You can skip steps, but make sure you have done all the <span style="color:red">
 
 ## 3 Code Structure
 
-TODO: Implement here later.
+### 3.1 Files
+
+``` bash
+.
+├── README.md
+├── public
+│   ├── index.html [1]
+│   └── robots.txt [2]
+└── src
+    ├── App.js [3]
+    ├── index.js [4]
+    ├── components [5]
+    │   ├── gadgets [6]
+    │   │   └── ... 
+    │   ├── layouts [7]
+    │   │   └── ...
+    │   └── pages [8]
+    │       ├── Events [8.1]
+    │       │   └── ...
+    │       └── HardFilter [8.2]
+    │           └── ...
+    ├── pages [9]
+    │   └── ...
+    └── store [10]
+        └── ...
+```
+
+#### 3.1.1 Displayed html page
+
+#### 3.1.2 Anti web scrawler
+
+#### 3.1.3 Routes
+
+#### 3.1.4 Page layout and global useState achieved by useContext
+
+#### 3.1.5 Contains all layouts and real html code snippets
+
+#### 3.1.6 Small reusable html components
+
+#### 3.1.7 Large reusable page template
+
+#### 3.1.8 Pages layout combination and adjustment. Serves as callee of 3.1.9.
+
+#### 3.1.8.1 Main layout of results display without login. Serves as an example.
+
+#### 3.1.8.2 Main layout of results display without login. Serves as an example.
+
+#### 3.1.9 Interation with backend logic and caller of 3.1.8.
+
+#### 3.1.10 Maintain useContext variables here.
