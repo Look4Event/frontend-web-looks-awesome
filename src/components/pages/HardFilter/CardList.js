@@ -23,7 +23,7 @@ function CardList(props) {
     const enteredLocation = locationRef.current.value;
 
     const eventData = {
-      userid: loginInfoCtx.userObj.email,
+      userid: loginInfoCtx.userObj,
       event: enteredTitle,
       description: enteredDescription,
       start: enteredStartTime,
@@ -32,7 +32,7 @@ function CardList(props) {
       item: item,
     };
 
-    console.log(eventData) // for frontend testing
+    console.log(eventData); // for frontend testing
 
     props.addNewEvent(eventData); // to send data to backend api as props 
   }

@@ -15,7 +15,7 @@ function ShopList(props) {
           image={'https://docs.microsoft.com/en-us/windows/apps/design/controls/images/image-licorice.jpg'}
           name={shopitem.name}
           rating={shopitem.google_rating}
-          website={'https://www.deepl.com/translator'}
+          website={shopitem.website}
         />
       ))}
   

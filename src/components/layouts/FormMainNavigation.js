@@ -1,15 +1,18 @@
 import { Link } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import jwt_decode from "jwt-decode";
+import LoginInfoContext from "../../store/login-info";
 
 import classes from './FormMainNavigation.module.css';
 
 function FormMainNavigation() {
     const [ user, setUser ] = useState(null);
+    const loginInfoCtx = useContext(LoginInfoContext);
 
     function handleCallbackResponse(response) {
         var userObject = jwt_decode(response.credential);
         setUser(userObject);
+        loginInfoCtx.createLoginInfo(userObject);
     }
 
     useEffect(() => {
