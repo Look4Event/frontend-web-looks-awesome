@@ -2,9 +2,9 @@
 
 You can skip steps, but make sure you have done all the <span style="color:red">[<u>**Required Checkpoint**</u>]</span> items.
 
-### 1 Environment Setup
+## 1 Environment Setup
 
-#### 1.1 Set up the environment
+### 1.1 Set up the environment
 
 - Install the latest [`node.js`](https://nodejs.org/en/download/) according to your OS (operating system)
 
@@ -38,7 +38,7 @@ You can skip steps, but make sure you have done all the <span style="color:red">
 
     You should see a version number. Make sure that `git >= 2.30.0`.
 
-#### 1.2 Initialize the repository
+### 1.2 Initialize the repository
 
 - <span style="color:red">[**<u>Required Checkpoint</u>**] </span>
 
@@ -55,11 +55,11 @@ You can skip steps, but make sure you have done all the <span style="color:red">
     npm install
     ```
 
-### 2 Development Camp 
+## 2 Development Camp 
 
-#### 2.1 Start a new feature
+### 2.1 Start a new feature
 
-##### 2.1.1 Pull staging & Create your own feature branch
+#### 2.1.1 Pull staging & Create your own feature branch
 
 - <span style="color:red">[**<u>Required Checkpoint</u>**] </span>
 
@@ -87,7 +87,7 @@ You can skip steps, but make sure you have done all the <span style="color:red">
 
   - You now can develop your own feature.
 
-##### 2.1.2 Save your changes & Get ready to push
+#### 2.1.2 Save your changes & Get ready to push
 
 - <span style="color:red">[**<u>Required Checkpoint</u>**] </span>
 
@@ -126,7 +126,7 @@ You can skip steps, but make sure you have done all the <span style="color:red">
 
       <sup>*Difference is in which two conflict commits are about to merge. In merge case, two commits are the latest commit of staging branch and the latest commit of your feature branch. In rebase case, two commits are the latest commit of staging branch and the earliest commit of your feature branch. </sup>
 
-##### 2.1.3 Make a PR (Pull Request)
+#### 2.1.3 Make a PR (Pull Request)
 
 - <span style="color:red">[**<u>Required Checkpoint</u>**] </span>
 
@@ -157,6 +157,6 @@ You can skip steps, but make sure you have done all the <span style="color:red">
   - [[Navigator] Added Google Auth Button](https://github.com/Beak-Tech/frontend-web-looks-awesome/pull/3)
   - [[EventDisplayGuest] Realized Guest View Events Layouts & Logic](https://github.com/Beak-Tech/frontend-web-looks-awesome/pull/2)
 
-### 3 Code Structure
+## 3 Code Structure
 
 TODO: Implement here later.
