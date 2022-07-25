@@ -1,7 +1,8 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useContext } from "react";
 
 import FilterCard from "../../gadgets/FilterCard";
 import classes from "./CardList.module.css";
+import LoginInfoContext from "../../../store/login-info";
 
 function CardList(props) {
   const untitledEventRef = useRef();
@@ -10,6 +11,7 @@ function CardList(props) {
   const endTimeRef = useRef();
   const locationRef = useRef();
   const [item, setCounter] = useState(0);
+  const loginInfoCtx = useContext(LoginInfoContext);
 
  
   function submitHandler(event) {
@@ -21,7 +23,7 @@ function CardList(props) {
     const enteredLocation = locationRef.current.value;
 
     const eventData = {
-      userid:'',
+      userid: loginInfoCtx.userObj.email,
       event: enteredTitle,
       description: enteredDescription,
       start: enteredStartTime,
