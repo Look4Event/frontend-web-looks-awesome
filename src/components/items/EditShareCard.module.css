@@ -13,5 +13,6 @@
 
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-between;
+    overflow: auto;
   }

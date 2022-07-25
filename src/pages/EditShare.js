@@ -29,7 +29,33 @@ const DUMMY_DATA_DRINKS = [{'title': 'drinks1', 'detail': 'This is drinks1.', 'i
                            {'title': 'drinks13', 'detail': 'This is drinks13.', 'id': 13},
                            {'title': 'drinks14', 'detail': 'This is drinks14.', 'id': 14},
                            {'title': 'drinks15', 'detail': 'This is drinks15.', 'id': 15},
-                           {'title': 'drinks16', 'detail': 'This is drinks16.', 'id': 16}]                         
+                           {'title': 'drinks16', 'detail': 'This is drinks16.', 'id': 16}]
+
+const DUMMY_DATA_INDOOR = [{'title': 'indoor1', 'detail': 'This is indoor1.', 'id': 1}, 
+                           {'title': 'indoor2', 'detail': 'This is indoor2.', 'id': 2}, 
+                           {'title': 'indoor3', 'detail': 'This is indoor3.', 'id': 3}, 
+                           {'title': 'indoor4', 'detail': 'This is indoor4.', 'id': 4}, 
+                           {'title': 'indoor5', 'detail': 'This is indoor5.', 'id': 5}, 
+                           {'title': 'indoor6', 'detail': 'This is indoor6.', 'id': 6},
+                           {'title': 'indoor7', 'detail': 'This is indoor7.', 'id': 7},
+                           {'title': 'indoor8', 'detail': 'This is indoor8.', 'id': 8},
+                           {'title': 'indoor9', 'detail': 'This is indoor9.', 'id': 9},
+                           {'title': 'indoor10', 'detail': 'This is indoor10.', 'id': 10},
+                           {'title': 'indoor11', 'detail': 'This is indoor11.', 'id': 11},
+                           {'title': 'indoor12', 'detail': 'This is indoor12.', 'id': 12}]
+                           
+const DUMMY_DATA_OUTDOOR = [{'title': 'outdoor1', 'detail': 'This is outdoor1.', 'id': 1}, 
+                            {'title': 'outdoor2', 'detail': 'This is outdoor2.', 'id': 2}, 
+                            {'title': 'outdoor3', 'detail': 'This is outdoor3.', 'id': 3}, 
+                            {'title': 'outdoor4', 'detail': 'This is outdoor4.', 'id': 4}, 
+                            {'title': 'outdoor5', 'detail': 'This is outdoor5.', 'id': 5}, 
+                            {'title': 'outdoor6', 'detail': 'This is outdoor6.', 'id': 6},
+                            {'title': 'outdoor7', 'detail': 'This is outdoor7.', 'id': 7},
+                            {'title': 'outdoor8', 'detail': 'This is outdoor8.', 'id': 8},
+                            {'title': 'outdoor9', 'detail': 'This is outdoor9.', 'id': 9},
+                            {'title': 'outdoor10', 'detail': 'This is outdoor10.', 'id': 10},
+                            {'title': 'outdoor11', 'detail': 'This is outdoor11.', 'id': 11},
+                            {'title': 'outdoor12', 'detail': 'This is outdoor12.', 'id': 12}]                           
 
 function EditSharePage(props) {
     return (
@@ -37,6 +63,8 @@ function EditSharePage(props) {
             <EditShareCard>
                 <EditShareList category='Food' items={DUMMY_DATA_FOOD}></EditShareList>
                 <EditShareList category='Drinks' items={DUMMY_DATA_DRINKS}></EditShareList>
+                <EditShareList category='Indoor' items={DUMMY_DATA_INDOOR}></EditShareList>
+                <EditShareList category='Outdoor' items={DUMMY_DATA_OUTDOOR}></EditShareList>
             </EditShareCard>
         </div>
     )
