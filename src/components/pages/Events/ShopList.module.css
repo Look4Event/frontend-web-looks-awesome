@@ -1,6 +1,7 @@
 .box {
   position: relative;
   left: -20%;
+  right:20%;
 }
 
 .list {
