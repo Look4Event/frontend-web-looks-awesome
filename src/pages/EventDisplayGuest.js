@@ -39,7 +39,7 @@ function HomePage() {
   }, []);
 
   if (isLoading) {
-    return <p>Loading</p>;
+    return <p className={classes.title_name}>Loading</p>;
   }
 
   return (

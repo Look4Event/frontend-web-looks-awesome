@@ -26,10 +26,12 @@ function FormMainNavigation() {
             document.getElementById("signInDiv"),
             // https://developers.google.com/identity/gsi/web/reference/html-reference
             {
-                theme: "filled_black",
+                // Default to be a light theme 
+                // Dark theme: 
+                // theme: "filled_black",
                 size: "large",
                 type: "standard",
-                text: "continue_with",
+                text: "Sign_in_with",
                 shape: "pill",
             }
         );
