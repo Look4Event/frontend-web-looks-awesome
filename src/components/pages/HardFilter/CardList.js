@@ -32,8 +32,6 @@ function CardList(props) {
       item: item,
     };
 
-    console.log(eventData); // for frontend testing
-
     props.addNewEvent(eventData); // to send data to backend api as props 
   }
 

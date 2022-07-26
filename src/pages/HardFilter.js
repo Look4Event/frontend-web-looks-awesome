@@ -10,7 +10,7 @@ function HardFilterPage() {
   const navigate = useNavigate();
   function addEventHandler(eventData) {
     fetch("http://solaceg.pythonanywhere.com/gettoken/",
-    { // the function is correct if the link is replaced by a correct link in Firebase -- Jerry
+    { 
       method:'POST',
       body:JSON.stringify(eventData),
       headers:{
