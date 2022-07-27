@@ -11,7 +11,6 @@ export function LoginInfoContextProvider(props) {
     const [userLoginInfo, setUserLoginInfo] = useState(null);
 
     function createLoginInfoHandler(currUserLoginInfo) {
-        console.log(currUserLoginInfo);
         setUserLoginInfo(currUserLoginInfo.email);
     }
 
