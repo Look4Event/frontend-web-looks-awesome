@@ -27,12 +27,10 @@ function FormMainNavigation() {
             // https://developers.google.com/identity/gsi/web/reference/html-reference
             {
                 // Default to be a light theme 
-                // Dark theme: 
-                // theme: "filled_black",
                 size: "large",
                 type: "standard",
                 text: "Sign_in_with",
-                shape: "pill",
+                shape: "square",
             }
         );
     }, []);

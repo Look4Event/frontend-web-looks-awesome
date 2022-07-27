@@ -71,29 +71,3 @@
   margin-right: 1rem;
 }
 
-/* href link responsive design*/
-
-a:link {
-  color: green;
-  background-color: transparent;
-  text-decoration: none;
-  font-family: Arial;
-}
-a:visited {
-  color: rgb(148, 85, 95);
-  background-color: transparent;
-  text-decoration: none;
-  font-family: Arial;
-}
-a:hover {
-  color: rgba(113, 5, 5, 0.781);
-  background-color: transparent;
-  text-decoration: underline;
-  font-family: Arial;
-}
-a:active {
-  color: rgb(217, 255, 0);
-  background-color: transparent;
-  text-decoration: underline;
-  font-family: Arial;
-}
