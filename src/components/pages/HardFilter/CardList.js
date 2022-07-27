@@ -36,7 +36,7 @@ function CardList(props) {
   }
 
   return (
-    <form onSubmit={submitHandler}>
+    <form onSubmit={submitHandler} className={classes.form}>
       <ul className={classes.list}>
         <li>
           <FilterCard isTitleCard={true}>

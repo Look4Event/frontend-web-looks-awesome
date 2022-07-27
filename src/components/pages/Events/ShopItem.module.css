@@ -1,19 +1,26 @@
 .item {
-  width: 24.9%;
-  margin-top: 1rem;
-  margin-left: 0.625rem;
-  margin-bottom: 3rem;
+  width: 25%;
+  margin-top: 0.8rem;
+  margin-bottom: 0.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .image {
   width: 80%;
+  margin:auto;
   position: relative;
 }
 
 .image img {
+  object-fit:contain;
   width: 100%;
   display: block;
   object-fit: cover;
+  height: 12vw;
+  max-height: 10rem;
+  border-radius: 1vw;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(137, 137, 136, 0.6)
 }
 
 .image_overlay a {
@@ -36,6 +43,7 @@
   justify-content: center;
   opacity: 0;
   transition: opacity 0.4s;
+  border-radius: 1vw;
 }
 
 .image_overlay:hover {
@@ -53,20 +61,19 @@
 }
 
 .h3 {
-  font-size: 1.5rem;
+  font-size: 1.2vw;
   margin-bottom: 0.0625rem;
   font-weight: bold;
   font-family: Arial;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 0 auto 0 auto;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
 }
 
 .paragraph {
-  font-size: 1rem;
+  font-size: 0.9vw;
   margin-bottom: 0.0625rem;
   font-family: Arial;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 0 auto 0 auto;
 }
 
