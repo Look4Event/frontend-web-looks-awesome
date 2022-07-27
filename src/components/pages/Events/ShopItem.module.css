@@ -61,7 +61,7 @@
 }
 
 .h3 {
-  font-size: 1.2vw;
+  font-size: min(1.2vw, 1.2rem);
   margin-bottom: 0.0625rem;
   font-weight: bold;
   font-family: Arial;
@@ -71,7 +71,7 @@
 }
 
 .paragraph {
-  font-size: 0.9vw;
+  font-size: min(0.9vw, 0.9rem);
   margin-bottom: 0.0625rem;
   font-family: Arial;
   margin: 0 auto 0 auto;
