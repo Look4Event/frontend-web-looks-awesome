@@ -8,19 +8,19 @@
 
 .image {
   width: 80%;
-  margin:auto;
+  margin: auto;
   position: relative;
 }
 
 .image img {
-  object-fit:contain;
+  object-fit: contain;
   width: 100%;
   display: block;
   object-fit: cover;
   height: 12vw;
   max-height: 10rem;
   border-radius: 1vw;
-  box-shadow: 0.2rem 0.2rem 0.2rem rgba(137, 137, 136, 0.6)
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(137, 137, 136, 0.6);
 }
 
 .image_overlay a {
@@ -76,4 +76,3 @@
   font-family: Arial;
   margin: 0 auto 0 auto;
 }
-
