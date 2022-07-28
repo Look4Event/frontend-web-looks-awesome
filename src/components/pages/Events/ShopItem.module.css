@@ -1,0 +1,78 @@
+.item {
+  width: 25%;
+  margin-top: 0.8rem;
+  margin-bottom: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.image img {
+  object-fit: contain;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  height: 12vw;
+  max-height: 10rem;
+  border-radius: 1vw;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(137, 137, 136, 0.6);
+}
+
+.image_overlay a {
+  color: bisque;
+  font-size: 0.8rem;
+  text-decoration: none !important;
+}
+
+.image_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s;
+  border-radius: 1vw;
+}
+
+.image_overlay:hover {
+  opacity: 1;
+}
+
+.image_overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.image_overlay:hover > * {
+  transform: translateY(0px);
+  transition: transform 0.25s;
+}
+
+.h3 {
+  font-size: min(1.2vw, 1.2rem);
+  margin-bottom: 0.0625rem;
+  font-weight: bold;
+  font-family: Arial;
+  margin: 0 auto 0 auto;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+.paragraph {
+  font-size: min(0.9vw, 0.9rem);
+  margin-bottom: 0.0625rem;
+  font-family: Arial;
+  margin: 0 auto 0 auto;
+}

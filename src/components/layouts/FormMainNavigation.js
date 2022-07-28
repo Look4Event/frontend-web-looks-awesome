@@ -1,15 +1,18 @@
 import { Link } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import jwt_decode from "jwt-decode";
+import LoginInfoContext from "../../store/login-info";
 
 import classes from './FormMainNavigation.module.css';
 
 function FormMainNavigation() {
     const [ user, setUser ] = useState(null);
+    const loginInfoCtx = useContext(LoginInfoContext);
 
     function handleCallbackResponse(response) {
         var userObject = jwt_decode(response.credential);
         setUser(userObject);
+        loginInfoCtx.createLoginInfo(userObject);
     }
 
     useEffect(() => {
@@ -23,11 +26,11 @@ function FormMainNavigation() {
             document.getElementById("signInDiv"),
             // https://developers.google.com/identity/gsi/web/reference/html-reference
             {
-                theme: "filled_black",
+                // Default to be a light theme 
                 size: "large",
                 type: "standard",
-                text: "continue_with",
-                shape: "pill",
+                text: "Sign_in_with",
+                shape: "square",
             }
         );
     }, []);

@@ -1,0 +1,27 @@
+.box {
+  align-items: center;
+  justify-content: center;
+}
+
+.list {
+  list-style: none;
+}
+
+.card_board {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:space-between;
+}
+
+.card_board::after {
+  content: "";
+  flex: auto;
+}
+
+.title_name {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #302f2e;
+  position: relative;
+  font-weight: bold;
+}
