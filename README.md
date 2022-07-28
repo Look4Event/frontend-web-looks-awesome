@@ -79,7 +79,7 @@ You can skip steps, but make sure you have done all the <span style="color:red">
 
   - Install updated `node.js` modules
 
-    - Other developers possibly added new modules, so you have to update your package. <sup>Our team previously employed `npm install`; however, @bulaienTang suggested that the old command would overwrite the `package-lock.json`.</sup>
+    - Other developers possibly added new modules, so you have to update your package. <sub>Our team previously employed `npm install`; however, @bulaienTang suggested that the old command would overwrite the `package-lock.json`.</sub>
 
     ``` bash
     npm ci
