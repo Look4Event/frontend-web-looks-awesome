@@ -1,4 +1,10 @@
 .section_board {
   width: 100%;
-  
+}
+
+.title_name {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #565656;
+  position: relative;
 }

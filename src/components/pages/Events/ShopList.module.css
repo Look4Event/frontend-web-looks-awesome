@@ -1,26 +1,27 @@
-.list {
-  list-style: none;
-  margin-left: -18rem;
-  margin-right: 8rem;
+.box {
+  align-items: center;
+  justify-content: center;
 }
 
-.card_board{
-  display: flex;
-  width: 200%;
-  flex-flow: wrap;
+.list {
+  list-style: none;
+}
 
+.card_board {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:space-between;
 }
 
 .card_board::after {
-  content: '';
-  flex: 1;
+  content: "";
+  flex: auto;
 }
 
 .title_name {
   text-align: center;
   font-size: 1.5rem;
-  color: #565656;
-  margin-left:+18rem; /* to counteract Margin-left: -10 rem in .list. This makes "Reccomendation" in the center*/
-  margin-right: -8rem; /* to counteract Margin-left: -10 rem in .list. This makes "Reccomendation" in the center*/
+  color: #302f2e;
+  position: relative;
+  font-weight: bold;
 }
-
