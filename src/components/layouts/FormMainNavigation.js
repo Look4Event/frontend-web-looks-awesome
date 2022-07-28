@@ -62,6 +62,11 @@ function FormMainNavigation() {
                         </Link>
                     </li>
                     <li>
+                        <Link to='/vote'>
+                            Vote
+                        </Link>
+                    </li>
+                    <li>
                         <Link to='/results'>
                         Results
                         </Link>

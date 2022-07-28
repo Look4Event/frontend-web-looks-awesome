@@ -1,0 +1,30 @@
+.title {
+    padding-top:1.5rem;
+    padding-left:5%;
+    padding-bottom:1.5rem;
+    font-size: 1.5rem;    
+    color:#000000;
+}
+
+.subtitle {
+    padding-top:1.5rem;
+    padding-left:5%;
+    padding-bottom:0.5rem;
+    font-size: 1.1rem;    
+    color:#484848;
+}
+
+.control {
+    margin-left: 5%;
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+    display: flex;
+}
+
+.input {
+    color: #666666;
+    width: 80%;
+    font-size: 1.1rem;
+    border-color: transparent;
+    border-bottom-color: #888888;
+}
