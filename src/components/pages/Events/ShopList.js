@@ -11,7 +11,7 @@ function ShopList(props) {
             <ShopItem
               key={shopitem.google_id}
               id={shopitem.google_id}
-              image={shopitem.image}
+              image={shopitem.image_url}
               name={shopitem.name}
               rating={shopitem.google_rating}
               website={shopitem.website}
