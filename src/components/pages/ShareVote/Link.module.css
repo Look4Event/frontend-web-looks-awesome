@@ -21,6 +21,12 @@
     border-bottom-color: #888888;
 }
 
+.input:focus,
+.input.focus {
+  border-bottom-color: rgb(255, 145, 0);
+  outline: none;
+}
+
 .copy_btn {
     background: rgb(255, 133, 2);
     border-radius: 10px;
@@ -48,7 +54,7 @@
   border: none;
 }
 
-.shorten input {
+/* .shorten input {
     margin-left: 5%
 }
 
@@ -58,4 +64,4 @@
 
 .shorten span {
     margin-left: 1%;
-}
+} */

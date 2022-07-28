@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/create' element={<HardFilterPage />} />
-          <Route path='/vote' element={<ShareVote />} />
+          <Route path='/vote-invitation' element={<ShareVote />} />
           <Route path='/results' element={<EventDisplayGuestPage />} />
           <Route path='/edit-share' element={<EditSharePage />} />
         </Routes>

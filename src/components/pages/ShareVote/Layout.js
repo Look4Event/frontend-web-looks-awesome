@@ -5,11 +5,29 @@ import Link from './Link';
 import classes from './Layout.module.css';
 
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-function Layout(props) {
+function Layout() {
 
     const [isEmail, setToEmail] = useState(true);
     const [isLink, setToLink] = useState(false);
+
+    const navigate = useNavigate();
+
+    function onSendEmailHandler(emailData) {
+        fetch(
+            'https://react-project-bf0a1-default-rtdb.firebaseio.com/meetups.json',
+            {
+                method: 'POST',
+                body: JSON.stringify(emailData),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }
+        ).then(() => {
+            navigate('/',{replace: true});
+        });
+    }
 
     function useEmail() {
         setToEmail(() => true);
@@ -39,7 +57,7 @@ function Layout(props) {
             <div className={classes.line}>
                 <hr />
             </div>
-            {isEmail && (<div><Email /></div>)}
+            {isEmail && (<div><Email onSendEmail={onSendEmailHandler}/></div>)}
             {isLink && (<div><Link /></div>)}
         </InviteCard>
     );

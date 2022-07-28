@@ -1,24 +1,46 @@
+import PopUp from '../../gadgets/PopUp';
+
 import classes from './Link.module.css';
 
+import { useState } from 'react';
+
 function Link() {
+    const [ popUpOpen, setPopUp ] = useState(false);
+
+    const url = 'www.look4event.com/vote-invitation/{token}'
+
     function copyLinkHandler(){
-        console.log('copied');
+        const el = document.createElement('input');
+        el.value = url;
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+        //copied
+        
+        setPopUp(true);
+        //disappears in 3 seconds
+        setTimeout(() => {
+            setPopUp(false);
+        }, 3000);
     }
+
+    function closePopUpHandler() {
+        setPopUp(false);
+    }
+
     return <div>
         <div className={classes.title}>Link</div>
         <div className={classes.control}>
             <input required className={classes.input} type="text" 
-            defaultValue={'https://xxxx.xxxxx.com/xxxx/'}/>
-        </div>
-        <div className={classes.shorten}>
-            <label>
-                <input className={classes.checkbox} type='checkbox'/>
-                <span>Shorten URL</span>
-            </label>
+            defaultValue={url}/>
         </div>
         <div className={classes.right_div}>
             <button className={classes.copy_btn} onClick={copyLinkHandler}>Copy</button>
         </div>
+        {
+            popUpOpen && <PopUp onConfirm={closePopUpHandler} />
+        }
     </div>
 }
 

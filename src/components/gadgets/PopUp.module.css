@@ -1,0 +1,24 @@
+/* .popUp {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    background-color: #D6D6D6;
+    padding: 1rem;
+    text-align: center;
+    width: 20rem;
+    position: fixed;
+    opacity: 0.5;
+    left: 36%;
+  } */
+
+  .popUp {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    background-color: #D6D6D6;
+    padding: 1rem;
+    text-align: center;
+    width: 30rem;
+    z-index: 10;
+    position: fixed;
+    top: 33vh;
+    left: calc(50% - 16rem);
+    opacity: 0.5;
+  }

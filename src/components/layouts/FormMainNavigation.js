@@ -62,7 +62,7 @@ function FormMainNavigation() {
                         </Link>
                     </li>
                     <li>
-                        <Link to='/vote'>
+                        <Link to='/vote-invitation'>
                             Vote
                         </Link>
                     </li>
