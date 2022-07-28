@@ -25,26 +25,20 @@ function Layout(props) {
             <div className={classes.subtitle}>Send to Vote</div>
             <div className={classes.methods}>
                 <p>Send via</p>
-                <nav>
-                <ul>
-                        <li>
-                            <img 
-                                className={classes.emailImg} 
-                                onClick={useEmail} 
-                                src={process.env.PUBLIC_URL + '/email.jpg'} alt="Email"
-                            />
-                        </li>
-                        <li>
-                            <img 
-                                className={classes.linkImg} 
-                                onClick={useLink} 
-                                src={process.env.PUBLIC_URL + '/link.jpg'}alt="Link"
-                            />
-                        </li>
-                    </ul>
-                </nav>
+                <img 
+                    className={classes.emailImg} 
+                    onClick={useEmail} 
+                    src={process.env.PUBLIC_URL + '/email.jpg'} alt="Email"
+                />
+                <img 
+                    className={classes.linkImg} 
+                    onClick={useLink} 
+                    src={process.env.PUBLIC_URL + '/link.jpg'}alt="Link"
+                />
             </div>
-            <hr />
+            <div className={classes.line}>
+                <hr />
+            </div>
             {isEmail && (<div><Email /></div>)}
             {isLink && (<div><Link /></div>)}
         </InviteCard>

@@ -18,7 +18,9 @@ function Email() {
         <div className={classes.control}>
             <input required className={classes.input} type="text" defaultValue="I've invited you to fill out a form" />
         </div>
-        <button className={classes.button} onClick={sendEmailHandler}>Send!</button>
+        <div className={classes.right_div}>
+            <button className={classes.send_btn} onClick={sendEmailHandler}>Send</button>
+        </div>
     </div>
 }
 

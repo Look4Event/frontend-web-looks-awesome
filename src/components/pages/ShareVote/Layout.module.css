@@ -1,7 +1,7 @@
 .subtitle {
     padding-top:1.5rem;
     padding-left:5%;
-    padding-bottom:1.5rem;
+    padding-bottom:3rem;
     font-size: 1.5rem;
     color:#000000;
     font-weight: bold;
@@ -14,33 +14,29 @@
 
 .methods {
     margin-left: 5%;
-    padding-bottom: 0.3rem;
     font-size: 1.0rem;
     color:#484848;
     display: flex;
+    /* align-items: baseline; */
+    align-items: flex-end;
 }
 
-.methods nav {
-    margin-left: 5%;
+.methods p {
+    margin-right:3%;
+    margin-bottom: 0.3rem;
+}
+
+.methods img {
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
     padding-bottom: 0.3rem;
-}
-
-.methods ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: baseline;
-}
-
-.methods li {
-    margin-left: 1rem;
-    margin-right: 1rem;
 }
 
 .emailImg {
     width: 30px;
-    height: 25px;
+    height: 24px;
 }
 
 .linkImg {
@@ -48,83 +44,17 @@
     height: 24px;
 }
 
-.control {
-    margin-left: 15%;
-    padding-bottom: 1rem;
-    font-size: 1.3rem;
-    display: flex;
+.emailImg:hover{
+  color: #333333;
+  border-bottom: orange;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
 }
 
-.control_choice_non_flex {
-    margin-left: 15%;
-    padding-bottom: 1rem;    
-    font-size: 1.3rem;
-}
-
-
-
-.control_left {
- width: 45%;
-}
-
-.control_left label {
-    color:#545454;
-}
-
-.datetime_input {
-    text-align: center;
-    align-items: center;
-    color: #666666;
-    width: 35%;
-    font-size: 1rem;
-    border-top-color: transparent;
-    border-left-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: #999999;
-
-}
-
-.where_input {
-    color: #666666;
-    padding-left: 0.2rem;
-    width: 60%;
-    font-size: 1.1rem;
-    border-color: transparent;
-    border-bottom-color: #888888;
-}
-
-.choice_input {
-    color: #666666;
-}
-
-.control_choice {
-    padding-bottom: 1rem;
-    font-size: 1.3rem;
-    display: flex;
-}
-
-.where_input:focus, .where_input.focus {
-    border-bottom-color: rgb(255, 145, 0);
-    outline: none;
-}
-
-.list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.methods img:hover{
+    color: #333333;
+    border-bottom: orange;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    margin-bottom: -0.2rem;
   }
-
-  .li_card_list {
-    margin-bottom: 0.5rem;
-    list-style: none;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  
-
-
-
-
-
-  

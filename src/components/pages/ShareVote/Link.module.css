@@ -1,0 +1,61 @@
+.title {
+    padding-top:1.5rem;
+    padding-left:5%;
+    padding-bottom:1.5rem;
+    font-size: 1.5rem;    
+    color:#000000;
+}
+
+.control {
+    margin-left: 5%;
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+    display: flex;
+}
+
+.input {
+    color: #666666;
+    width: 90%;
+    font-size: 1.1rem;
+    border-color: transparent;
+    border-bottom-color: #888888;
+}
+
+.copy_btn {
+    background: rgb(255, 133, 2);
+    border-radius: 10px;
+    width: 5rem;
+    height: 3.5rem;
+    font-size: 1.2rem;
+    color: white;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.right_div {
+    text-align: right;
+    align-items: right;
+    margin-top: 1.0rem;
+    margin-right: 5%;
+    margin-bottom: 1.5rem;
+}
+
+.copy_btn:hover,
+.copy_btn.hover {
+  background: rgb(255, 160, 0);
+  border-radius: 10px;
+  color: white;
+  border: none;
+}
+
+.shorten input {
+    margin-left: 5%
+}
+
+.checkbox:checked {
+    accent-color: rgb(255, 133, 2);
+}
+
+.shorten span {
+    margin-left: 1%;
+}
