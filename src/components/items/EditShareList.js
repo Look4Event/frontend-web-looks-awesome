@@ -7,12 +7,15 @@ import { useState } from "react";
 
 function EditShareList(props) {
     const [showMask, setshowMask] = useState(false);
+    const [listActive, setlistActive] = useState(true);
 
     function listCloseHandler() {
         if (! showMask) {
             setshowMask(true);
+            setlistActive(false);
         } else {
             setshowMask(false);
+            setlistActive(true);
         }
     }
 
@@ -28,7 +31,8 @@ function EditShareList(props) {
                             key={item.id} 
                             id={item.id} 
                             title={item.title} 
-                            detail={item.detail}/>
+                            detail={item.detail}
+                            listActive={listActive}/>
                         )
                     )}
                 </EditShareListContainer>

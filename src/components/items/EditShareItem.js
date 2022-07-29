@@ -3,13 +3,16 @@ import classes from './EditShareItem.module.css'
 import EditShareItemCard from './EditShareItemCard';
 
 function EditShareItem(props) {
+    const listActive = props.listActive;
     const [itemActive, setItemActive] = useState(true);
 
     function itemClickHandler() {
-        if (itemActive) {
-            setItemActive(false);
-        } else {
-            setItemActive(true);
+        if (listActive) {
+            if (itemActive) {
+                setItemActive(false);
+            } else {
+                setItemActive(true);
+            }
         }
     }
 
