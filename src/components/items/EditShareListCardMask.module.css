@@ -1,0 +1,15 @@
+.card_mask {
+    /* Set absolute here so that the covered EditShareListCard can ignore it and be covered */
+    position: absolute;
+
+    height: 100%;
+    width: 52rem;
+
+    /* Only set margin left and right so that the card's height will be 100% of height of EditShareList */
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    background-color: gray;
+    opacity: 0.5;
+    border-radius: 10px;
+  }
