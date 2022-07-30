@@ -10,7 +10,11 @@ function Link() {
 
     const [ popUpOpen, setPopUp ] = useState(false);
 
-    const url = 'www.look4event.com/vote-invitation/' + eventTokenCtx.token;
+    let url = 'www.look4event.com/vote-invitation/' + eventTokenCtx.token;
+    
+    if(!eventTokenCtx.token) {
+        url = 'Sorry, no event token retrieved...Please try again';
+    }
 
     function copyLinkHandler(){
         const el = document.createElement('input');
