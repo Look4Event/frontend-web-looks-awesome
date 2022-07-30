@@ -1,13 +1,16 @@
 import PopUp from '../../gadgets/PopUp';
 
 import classes from './Link.module.css';
+import EventTokenContext from '../../../store/event-token';
 
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 
 function Link() {
+    const eventTokenCtx = useContext(EventTokenContext);
+
     const [ popUpOpen, setPopUp ] = useState(false);
 
-    const url = 'www.look4event.com/vote-invitation/{token}'
+    const url = 'www.look4event.com/vote-invitation/' + eventTokenCtx.token;
 
     function copyLinkHandler(){
         const el = document.createElement('input');
