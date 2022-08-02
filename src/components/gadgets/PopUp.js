@@ -1,9 +1,10 @@
 import classes from './PopUp.module.css';
 
-function PopUp() {
+function PopUp(props) {
     return ( 
         <div className={classes.popUp}>
-            {alert && <h3>Link copied to your clipboard!</h3>}
+            <h3 className={classes.message}>{props.message}</h3>
+            <h4 className={classes.expire}>Vote will expire in 24 hours</h4>
         </div>
     );
 }

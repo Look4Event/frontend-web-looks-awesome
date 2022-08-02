@@ -26,16 +26,12 @@ function Link() {
         inputElement.select();
         document.execCommand('copy');
         document.body.removeChild(inputElement);
-        
-        setPopUp(true);
+
         //automatically appears after copy button clicked, disappears in 3 seconds
+        setPopUp(true);
         setTimeout(() => {
             setPopUp(false);
         }, 3000);
-    }
-
-    function closePopUpHandler() {
-        setPopUp(false);
     }
 
     function viewResultHandler() {
@@ -53,7 +49,7 @@ function Link() {
             <button className={classes.view_btn} onClick={viewResultHandler}>See Current Results</button>
         </div>
         {
-            popUpOpen && <PopUp onConfirm={closePopUpHandler} />
+            popUpOpen && <PopUp message='Link copied to your clipboard!'/>
         }
     </div>
 }

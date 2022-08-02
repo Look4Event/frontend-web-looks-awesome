@@ -61,11 +61,15 @@ function FormMainNavigation() {
                             Create
                         </Link>
                     </li>
-                    <li>
-                        <Link to='/vote-invitation'>
-                            Vote
-                        </Link>
-                    </li>
+                    {/*only logged in user can access the voting tab*/}
+                    { user && (
+                            <li>
+                                <Link to='/vote-invitation'>
+                                    Vote
+                                </Link>
+                            </li>
+                        )
+                    }
                     <li>
                         <Link to='/results'>
                         Results

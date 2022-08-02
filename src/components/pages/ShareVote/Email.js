@@ -4,12 +4,14 @@ import { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import EventTokenContext from '../../../store/event-token';
+import PopUp from '../../gadgets/PopUp';
 import classes from './Email.module.css';
 
 
 function Email(props) {
 
     const [emails, setEmails] = useState([]);
+    const [ popUpOpen, setPopUp ] = useState(false);
     const eventTokenCtx = useContext(EventTokenContext);
     const navigate = useNavigate();
     const token = eventTokenCtx.token ? eventTokenCtx.token : 'null';
@@ -25,7 +27,22 @@ function Email(props) {
             userid: "user email",
         };
 
-        props.onSendEmail(emailData);
+        fetch(
+            'https://react-project-bf0a1-default-rtdb.firebaseio.com/meetups.json',
+            {
+                method: 'POST',
+                body: JSON.stringify(emailData),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }
+        ).then(() => {
+            //automatically appears after copy button clicked, disappears in 3 seconds
+            setPopUp(true);
+            setTimeout(() => {
+                setPopUp(false);
+            }, 3000);
+        });
     }
 
     function viewResultHandler() {
@@ -71,6 +88,9 @@ function Email(props) {
             <button className={classes.send_btn} onClick={sendEmailHandler}>Send</button>
             <button className={classes.view_btn} onClick={viewResultHandler}>See Current Results</button>
         </div>
+        {
+            popUpOpen && <PopUp message='Your Vote Has Been Successfully Sent!' />
+        }
     </div>
 }
 
