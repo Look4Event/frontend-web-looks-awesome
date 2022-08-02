@@ -1,15 +1,18 @@
-import { useRef } from 'react';
+import { ReactMultiEmail, isEmail } from 'react-multi-email';
+// import 'react-multi-email/style.css';
+import { useState } from 'react';
 
 
 import classes from './Email.module.css';
 
 function Email(props) {
-    const recipientsInputRef = useRef();
+
+    const [emails, setEmails] = useState([]);
 
     function sendEmailHandler(event){
         event.preventDefault();
 
-        const enteredRecipients = recipientsInputRef.current.value;
+        const enteredRecipients = emails.join(', ');
 
         const emailData = {
             emails: enteredRecipients,
@@ -22,9 +25,29 @@ function Email(props) {
     return <div>
         <div className={classes.title}>Email</div>
         <div className={classes.subtitle}>To</div>
-        <div className={classes.control}>
-            <input required className={classes.input} type="text"  ref={recipientsInputRef} placeholder='xxxx@gmail.com' />
-        </div>
+        <ReactMultiEmail className={classes.email}
+            emails={emails}
+            onChange={(_emails) => {
+                setEmails(_emails);
+            }}
+            validateEmail={email => {
+                return isEmail(email);
+            }}
+            getLabel={(
+                email,
+                index,
+                removeEmail,
+                ) => {
+                return (
+                    <div className={classes.dataTag} key={index}>
+                    {email}
+                    <span className={classes.dataTagHandle} onClick={() => removeEmail(index)}>
+                    ×
+                    </span>
+                    </div>
+                );
+            }}    
+        />
         <div className={classes.subtitle}>Subject</div>
         <div className={classes.control}>
             <input required className={classes.input} type="text" 
