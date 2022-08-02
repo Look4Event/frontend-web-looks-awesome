@@ -36,28 +36,42 @@
   outline: none;
 }
 
+.bottom_div {
+  margin-top: 1.0rem;
+  display: flex;
+  align-items: right;
+}
+
 .send_btn {
-    background: rgb(255, 133, 2);
-    border-radius: 10px;
-    width: 5rem;
-    height: 3.5rem;
-    font-size: 1.2rem;
-    color: white;
-    border: none;
-    margin-bottom: 1rem;
+  background: rgb(255, 133, 2);
+  border-radius: 10px;
+  width: 5rem;
+  height: 3.5rem;
+  font-size: 1.2rem;
+  color: white;
+  border: none;
+  margin-left: 40%;
 }
-
-.right_div {
-    text-align: right;
-    align-items: right;
-    margin-top: 1.0rem;
-    margin-right: 5%;
-    margin-bottom: 1.5rem;
-}
-
 .send_btn:hover {
+background: rgb(255, 160, 0);
+color: white;
+border: none;
+}
+
+.view_btn {
   background: rgb(255, 160, 0);
   border-radius: 10px;
+  width: 9rem;
+  height: 3.5rem;
+  font-size: 1.2rem;
+  color: white;
+  border: none;
+  margin-bottom: 1rem;
+  margin-left: 20%;
+  margin-right: auto;
+}
+.view_btn:hover {
+  background: rgb(255, 133, 2);
   color: white;
   border: none;
 }

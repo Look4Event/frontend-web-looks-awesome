@@ -46,12 +46,12 @@ function Layout() {
                 <img 
                     className={classes.emailImg} 
                     onClick={useEmail} 
-                    src={process.env.PUBLIC_URL + '/email.jpg'} alt="Email"
+                    src={process.env.PUBLIC_URL + '/icons/email.jpg'} alt="Email"
                 />
                 <img 
                     className={classes.linkImg} 
                     onClick={useLink} 
-                    src={process.env.PUBLIC_URL + '/link.jpg'}alt="Link"
+                    src={process.env.PUBLIC_URL + '/icons/link.jpg'}alt="Link"
                 />
             </div>
             <div className={classes.line}>

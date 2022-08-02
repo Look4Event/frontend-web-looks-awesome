@@ -7,7 +7,7 @@
     width: 30rem;
     z-index: 10;
     position: fixed;
-    top: 33vh;
+    top: 16rem;
     left: calc(50% - 16rem);
-    opacity: 0.5;
+    opacity: 0.8;
   }

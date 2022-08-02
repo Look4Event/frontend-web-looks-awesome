@@ -15,7 +15,7 @@
 
 .input {
     color: #666666;
-    width: 90%;
+    width: 85%;
     font-size: 1.1rem;
     border-color: transparent;
     border-bottom-color: orange;
@@ -29,30 +29,44 @@
 
 .copy_btn {
     background: rgb(255, 133, 2);
+    border-radius: 5px;
+    margin-left: 2%;
+    width: 3.3rem;
+    height: 2.2rem;
+    font-size: 1.2rem;
+    color: white;
+    border: none;
+}
+.copy_btn:hover {
+    background: rgb(255, 160, 0);
+    color: white;
+    border: none;
+  }
+
+.view_btn {
+    background: rgb(255, 160, 0);
     border-radius: 10px;
-    width: 5rem;
+    width: 9rem;
     height: 3.5rem;
     font-size: 1.2rem;
     color: white;
     border: none;
     margin-bottom: 1rem;
 }
+.view_btn:hover {
+    background: rgb(255, 133, 2);
+    color: white;
+    border: none;
+}
 
-.right_div {
-    text-align: right;
-    align-items: right;
+.mid_div {
+    text-align: center;
+    align-items: center;
     margin-top: 1.0rem;
-    margin-right: 5%;
     margin-bottom: 1.5rem;
 }
 
-.copy_btn:hover,
-.copy_btn.hover {
-  background: rgb(255, 160, 0);
-  border-radius: 10px;
-  color: white;
-  border: none;
-}
+/* for future usage on implementing shortened url*/
 
 /* .shorten input {
     margin-left: 5%

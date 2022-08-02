@@ -1,15 +1,11 @@
 .subtitle {
     padding-top:1.5rem;
     padding-left:5%;
+    padding: auto;
     padding-bottom:3rem;
     font-size: 1.5rem;
-    color:#000000;
+    color:#555555;
     font-weight: bold;
-}
-
-.subtitle_input:focus, .datetime_input:focus, .description_input:focus, .datetime_input.focus, .description_input.focus, .subtitle_input.focus {
-    border-bottom-color: rgb(255, 145, 0);
-    outline: none;
 }
 
 .methods {
