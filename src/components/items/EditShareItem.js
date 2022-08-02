@@ -5,7 +5,7 @@ import EditShareItemCard from './EditShareItemCard';
 function EditShareItem(props) {
     const listActive = props.listActive;
     const itemSelectable = (props.status === 1);
-    const [itemActive, setItemActive] = useState(itemSelectable); // default status depends on whether item is selectable
+    const [itemActive, setItemActive] = useState(itemSelectable); // default status depends on whether the item is selectable
 
     function itemClickHandler() {
         if (listActive && itemSelectable) {
