@@ -31,7 +31,7 @@ function EditShareList(props) {
                             key={item.id} 
                             id={item.id} 
                             title={item.title} 
-                            detail={item.detail}
+                            status={item.status}
                             listActive={listActive}/>
                         )
                     )}
