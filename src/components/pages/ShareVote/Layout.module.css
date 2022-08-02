@@ -31,7 +31,9 @@
     margin-right: 3%;
     padding-left: 0.3rem;
     padding-right: 0.3rem;
-    padding-bottom: 0.3rem;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-color: transparent;
 }
 
 .emailImg {
@@ -44,17 +46,6 @@
     height: 28px;
 }
 
-.emailImg:hover{
-  color: #333333;
-  border-bottom: orange;
-  border-bottom-width: 3px;
-  border-bottom-style: solid;
-}
-
 .methods img:hover{
-    color: #333333;
-    border-bottom: orange;
-    border-bottom-width: 3px;
-    border-bottom-style: solid;
-    margin-bottom: -0.2rem;
-  }
+    border-bottom-color: orange;
+}
