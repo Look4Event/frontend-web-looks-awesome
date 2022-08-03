@@ -3,9 +3,11 @@ import { useNavigate } from "react-router-dom";
 
 import CardList from "../components/pages/HardFilter/CardList";
 import EventTokenContext from "../store/event-token";
+import LoginInfoContext from "../store/login-info";
 
 function HardFilterPage() {
   const eventTokenCtx = useContext(EventTokenContext);
+  const loginInfoCtx = useContext(LoginInfoContext);
   // return <h1>This is the page where you set all the hard filters.</h1>;
   const navigate = useNavigate();
   function addEventHandler(eventData) {
@@ -20,9 +22,16 @@ function HardFilterPage() {
         return response.json();
       })
       .then((data) => {
+        console.log("FIRST");
         eventTokenCtx.createEventToken(data.token);
-
-        navigate("/results", { replace: true });
+        console.log("SECOND");
+        if (loginInfoCtx.hasLoginInfo()) {
+          console.log("THIRD");
+          navigate("/edit-share", { replace: true });
+        } else {
+          console.log("FORTH");
+          navigate("/results", { replace: true });
+        }
       });
   }
   return (
