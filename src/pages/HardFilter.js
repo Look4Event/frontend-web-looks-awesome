@@ -3,10 +3,11 @@ import { useNavigate } from "react-router-dom";
 
 import CardList from "../components/pages/HardFilter/CardList";
 import EventTokenContext from "../store/event-token";
+import LoginInfoContext from "../store/login-info";
 
 function HardFilterPage() {
   const eventTokenCtx = useContext(EventTokenContext);
-  // return <h1>This is the page where you set all the hard filters.</h1>;
+  const loginInfoCtx = useContext(LoginInfoContext);
   const navigate = useNavigate();
   function addEventHandler(eventData) {
     fetch("http://solaceg.pythonanywhere.com/gettoken/", {
@@ -21,8 +22,11 @@ function HardFilterPage() {
       })
       .then((data) => {
         eventTokenCtx.createEventToken(data.token);
-
-        navigate("/results", { replace: true });
+        if (loginInfoCtx.hasLoginInfo()) {
+          navigate("/edit-share", { replace: true });
+        } else {
+          navigate("/results", { replace: true });
+        }
       });
   }
   return (
