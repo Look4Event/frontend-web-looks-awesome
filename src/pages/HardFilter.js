@@ -8,7 +8,6 @@ import LoginInfoContext from "../store/login-info";
 function HardFilterPage() {
   const eventTokenCtx = useContext(EventTokenContext);
   const loginInfoCtx = useContext(LoginInfoContext);
-  // return <h1>This is the page where you set all the hard filters.</h1>;
   const navigate = useNavigate();
   function addEventHandler(eventData) {
     fetch("http://solaceg.pythonanywhere.com/gettoken/", {
@@ -22,14 +21,10 @@ function HardFilterPage() {
         return response.json();
       })
       .then((data) => {
-        console.log("FIRST");
         eventTokenCtx.createEventToken(data.token);
-        console.log("SECOND");
         if (loginInfoCtx.hasLoginInfo()) {
-          console.log("THIRD");
           navigate("/edit-share", { replace: true });
         } else {
-          console.log("FORTH");
           navigate("/results", { replace: true });
         }
       });
