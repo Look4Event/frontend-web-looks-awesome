@@ -1,15 +1,14 @@
 .popUp {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 50px;
-  background-color: #D6D6D6;
+  color: #666666;
+  background-color: #fff;
   padding: 1rem;
   text-align: center;
-  width: 30rem;
+  width: 20rem;
   z-index: 10;
   position: fixed;
   top: 16rem;
-  left: calc(50% - 16rem);
-  opacity: 0.8;
+  margin-left: 9%;
 }
 
 .message {
