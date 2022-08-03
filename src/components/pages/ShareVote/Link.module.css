@@ -1,0 +1,78 @@
+.title {
+    padding-top:1.5rem;
+    padding-left:5%;
+    padding-bottom:1.5rem;
+    font-size: 1.5rem;    
+    color:#000000;
+}
+
+.control {
+    margin-left: 5%;
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+    display: flex;
+}
+
+.input {
+    color: #666666;
+    width: 85%;
+    font-size: 1.1rem;
+    border-color: transparent;
+    border-bottom-color: orange;
+}
+
+.input:focus,
+.input.focus {
+  border-bottom-color: rgb(255, 145, 0);
+  outline: none;
+}
+
+.copy_btn {
+    background: rgb(255, 133, 2);
+    border-radius: 5px;
+    margin-left: 2%;
+    width: 3.3rem;
+    height: 2.2rem;
+    font-size: 1.2rem;
+    color: white;
+    border: none;
+}
+.copy_btn:hover {
+    background: rgb(255, 160, 0);
+    color: white;
+    border: none;
+  }
+
+.view_btn {
+    background: transparent;
+    width: 12rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    color: rgb(255, 133, 2);
+    border: none;
+    margin-bottom: 1rem;
+}
+.view_btn:hover {
+    color: rgb(255, 160, 0);
+}
+
+.mid_div {
+    text-align: center;
+    align-items: center;
+    margin-top: 1.0rem;
+    margin-bottom: 1.5rem;
+}
+
+/* for future usage on implementing shortened url*/
+
+/* .shorten input {
+    margin-left: 5%
+}
+
+.checkbox:checked {
+    accent-color: rgb(255, 133, 2);
+}
+
+.shorten span {
+    margin-left: 1%;
+} */

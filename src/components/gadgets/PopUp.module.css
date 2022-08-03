@@ -1,0 +1,16 @@
+.popUp {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  color: #666666;
+  background-color: #fff;
+  padding: 1rem;
+  text-align: center;
+  width: 20rem;
+  z-index: 10;
+  position: fixed;
+  top: 16rem;
+  margin-left: 9%;
+}
+
+.message {
+  margin-bottom: 1rem;
+}

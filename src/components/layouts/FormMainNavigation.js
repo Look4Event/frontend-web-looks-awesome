@@ -61,6 +61,14 @@ function FormMainNavigation() {
                             Create
                         </Link>
                     </li>
+                    { user && (
+                            <li>
+                                <Link to='/vote-invitation'>
+                                    Vote
+                                </Link>
+                            </li>
+                        )
+                    }
                     <li>
                         <Link to='/results'>
                         Results

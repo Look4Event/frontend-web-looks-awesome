@@ -1,0 +1,128 @@
+.title {
+    padding-top:1.5rem;
+    padding-left:5%;
+    padding-bottom:1.5rem;
+    font-size: 1.5rem;    
+    color:#000000;
+}
+
+.subtitle {
+    padding-top:1.5rem;
+    padding-left:5%;
+    padding-bottom:0.5rem;
+    font-size: 1.1rem;    
+    color:#484848;
+}
+
+.control {
+    margin-left: 5%;
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+    display: flex;
+}
+
+.input {
+    color: #666666;
+    width: 90%;
+    font-size: 1.1rem;
+    border-color: transparent;
+    border-bottom-color: orange;
+    padding-bottom: 0.3rem;
+}
+
+.input:focus,
+.input.focus {
+  border-bottom-color: rgb(255, 145, 0);
+  outline: none;
+}
+
+.bottom_div {
+  margin-top: 1.0rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.send_btn {
+  background: rgb(255, 133, 2);
+  border-radius: 10px;
+  width: 5rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  color: white;
+  border: none;
+  margin-left: 40%;
+  margin-bottom: 1rem;
+}
+.send_btn:hover {
+background: rgb(255, 160, 0);
+color: white;
+border: none;
+}
+
+.view_btn {
+  background: transparent;
+  width: 12rem;
+  height: 1.5rem;
+  font-size: 1rem;
+  color: rgb(255, 133, 2);
+  border: none;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+  margin-right: auto;
+}
+.view_btn:hover {
+  color: rgb(255, 160, 0);
+}
+
+.email {
+    margin-left: 5%;
+    width: 86%;
+    flex: 1 0 auto;
+    outline: 0;
+    text-align: left;
+    padding-bottom: 0.3rem;
+    background: #fff;
+    border: solid 2px;
+    border-color: transparent;
+    border-bottom-color: orange;
+    color: rgba(0, 0, 0, 0.87);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+}
+.email > input {
+    font-size: 1.1rem;
+    color: #666666;
+    width: auto !important;
+    outline: none !important;
+    border: 0 none !important;
+    display: inline-block !important;
+    line-height: 1;
+    vertical-align: baseline !important;
+    padding: 0.4em 0.1em !important;
+}
+
+.dataTag {
+  line-height: 1;
+  vertical-align: baseline;
+  margin: 0.14285714em;
+  background-color: #f3f3f3;
+  background-image: none;
+  padding: 0.5833em 0.833em;
+  color: rgba(0, 0, 0, 0.6);
+  text-transform: none;
+  font-weight: 600;
+  border: 0 solid transparent;
+  border-radius: 0.28571429rem;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.dataTagHandle {
+  margin-left: 0.833em;
+  cursor: pointer;
+}

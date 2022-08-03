@@ -1,0 +1,47 @@
+.subtitle {
+    padding-top:1.5rem;
+    padding-left:5%;
+    padding: auto;
+    padding-bottom:3rem;
+    font-size: 1.5rem;
+    color:#555555;
+    font-weight: bold;
+}
+
+.methods {
+    margin-left: 5%;
+    font-size: 1.0rem;
+    color:#484848;
+    display: flex;
+    /* align-items: baseline; */
+    align-items: flex-end;
+}
+
+.methods p {
+    margin-right:3%;
+    margin-bottom: 0.3rem;
+}
+
+.methods img {
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-color: transparent;
+}
+
+.emailImg {
+    width: 28px;
+    height: 28px;
+}
+
+.linkImg {
+    width: 28px;
+    height: 28px;
+}
+
+.methods img:hover{
+    border-bottom-color: orange;
+}
