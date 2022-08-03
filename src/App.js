@@ -5,6 +5,7 @@ import HardFilterPage from './pages/HardFilter';
 import EventDisplayGuestPage from './pages/EventDisplayGuest';
 import FormLayout from './components/layouts/FormLayout';
 import EditSharePage from './pages/EditShare';
+import ParticipantViewPage from './pages/ParticipantView';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
           <Route path='/create' element={<HardFilterPage />} />
           <Route path='/results' element={<EventDisplayGuestPage />} />
           <Route path='/edit-share' element={<EditSharePage />} />
+          {/* token not finished yet */}
+          <Route path='/vote' element={<ParticipantViewPage />} />
         </Routes>
       </FormLayout>
     </div>
