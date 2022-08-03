@@ -3,13 +3,17 @@ import classes from './EditShareItem.module.css'
 import EditShareItemCard from './EditShareItemCard';
 
 function EditShareItem(props) {
-    const [itemActive, setItemActive] = useState(true);
+    const listActive = props.listActive;
+    const itemSelectable = (props.status === 1);
+    const [itemActive, setItemActive] = useState(itemSelectable); // default status depends on whether the item is selectable
 
     function itemClickHandler() {
-        if (itemActive) {
-            setItemActive(false);
-        } else {
-            setItemActive(true);
+        if (listActive && itemSelectable) {
+            if (itemActive) {
+                setItemActive(false);
+            } else {
+                setItemActive(true);
+            }
         }
     }
 
@@ -19,7 +23,7 @@ function EditShareItem(props) {
                 <div className={classes.content}>
                     <h1>{props.title}</h1>
                 </div>
-                <div className={classes.status_color} style={{backgroundColor:itemActive ? 'transparent' : 'grey', opacity: itemActive ? 1 : 0.5}}></div>
+                <div className={classes.status_color} style={{backgroundColor: (itemActive && listActive) ? 'transparent' : 'grey', opacity: (itemActive && listActive) ? 1 : 0.5}}></div>
             </EditShareItemCard>
         </li>
     )

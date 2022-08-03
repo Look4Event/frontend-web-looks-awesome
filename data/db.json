@@ -1,0 +1,81 @@
+{
+    "play": {
+        "indoor": 
+            [
+                {
+                    "title": "Escape Room",
+                    "id": "0-0-0",
+                    "status": 1
+                },
+                {
+                    "title": "Movie",
+                    "id": "0-0-1",
+                    "status": 1
+                },
+                {
+                    "title": "Axe Throw",
+                    "id": "0-0-2",
+                    "status": 0
+                }
+            ]
+        ,
+        "outdoor": 
+            [
+                {
+                    "title": "Golf",
+                    "id": "0-1-0",
+                    "status": 1
+                },
+                {
+                    "title": "Archery",
+                    "id": "0-1-1",
+                    "status": 1 
+                },
+                {
+                    "title": "Axe Throw",
+                    "id": "0-1-2",
+                    "status": 0 
+                }
+            ]
+        
+    },
+    "eat": {
+        "food": 
+            [
+                {
+                    "title": "Dim Sum",
+                    "id": "1-0-0",
+                    "status": 1
+                },
+                {
+                    "title": "Hunan Cuisine",
+                    "id": "1-0-1",
+                    "status": 1
+                },
+                {
+                    "title": "Steak House",
+                    "id": "1-0-2",
+                    "status": 0
+                }
+            ]
+        ,
+        "drink": 
+            [
+                {
+                    "title": "Thai Boba", 
+                    "id": "1-1-0",
+                    "status": 1
+                },
+                {
+                    "title": "Fruit Tea",
+                    "id": "1-1-1",
+                    "status": 1
+                },
+                {
+                    "title": "Tea House",
+                    "id": "1-1-2",
+                    "status": 0
+                }
+            ]
+    }
+}
