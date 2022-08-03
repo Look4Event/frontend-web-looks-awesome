@@ -41,6 +41,8 @@ const Checkbox = ({ obj, onChange }) => {
 };
 
 function ParticipantLayout() {
+  document.body.style.backgroundColor = "#BDE9FF";
+
   const [data, setData] = useState(
     MyCheckBoxList.sort((a, b) => a.order - b.order)
   );
