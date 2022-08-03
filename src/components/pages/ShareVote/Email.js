@@ -90,7 +90,7 @@ function Email() {
           required
           className={classes.input}
           type="text"
-          defaultValue="LOOK4MEET Invitation"
+          defaultValue="LOOK4EVENT Invitation"
         />
       </div>
       <div className={classes.subtitle}>Message</div>
