@@ -19,7 +19,7 @@ function ParticipantLayout(props) {
   document.body.style.backgroundColor = "#BDE9FF";
     const handleSubmit = event => {
         event.preventDefault();
-
+        // TODO: Set the submit output
         console.log("Submitted");
     };
 
@@ -27,7 +27,7 @@ function ParticipantLayout(props) {
     <div className={classes.layout}>
       <form className={classes.OptionCard} onSubmit={handleSubmit}>
         {testData.map(createEntry)}
-        TODO: Set the submit information
+        {/* // TODO: Set the submit input */}
         <button type="submit" className={classes.submit}>
           Submit
         </button>
