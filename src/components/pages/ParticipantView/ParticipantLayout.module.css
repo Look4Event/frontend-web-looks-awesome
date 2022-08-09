@@ -1,0 +1,33 @@
+.layout {
+  background-color: white;
+  border-radius: 0.8rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  max-width: 80rem;
+  margin: auto;
+  margin-top: 1.2rem;
+}
+
+.submit {
+  position: relative;
+  left: 65rem;
+
+
+  background: #429ebd;
+  border-radius: 10px;
+
+  width: 85px;
+  height: 31px;
+
+  font-family: "ABeeZee";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 31px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.OptionCard {
+    padding-top: 2%;
+}
